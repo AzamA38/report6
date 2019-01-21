@@ -7,8 +7,9 @@ import static org.junit.Assert.*;
 public class GameTest {
 
     @Test
-    public void answerNumber(){
+    void TestAnswerNumber(){
 
-
+        Game ga = new Game();
+        assertEquals(1,ga.answerNumber());//とりあえずやってみよう！
     }
 }
