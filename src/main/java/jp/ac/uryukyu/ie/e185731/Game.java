@@ -10,7 +10,7 @@ public class Game {
      * 答えとなる３つの数字を生成するメソッド
      */
 
-    private int[] answerNumber() {
+    public int[] answerNumber() {
 
         int[] answer = new int[3];
 
@@ -31,9 +31,9 @@ public class Game {
         /*
         とりあえずプリントしてみる。
          */
-        System.out.print(answer[0]);
-        System.out.print(answer[1]);
-        System.out.println(answer[2]);
+        //System.out.print(answer[0]);
+        //System.out.print(answer[1]);
+        //System.out.println(answer[2]);
 
         return answer;
 
