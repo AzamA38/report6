@@ -97,7 +97,7 @@ public class Game {
 
             System.out.println("イート" + eat + "　バイト" + bite);
             if (eat == 3){
-                System.out.println("おめでとー");
+                System.out.println("正解！");
                 break;
             }else{
                 System.out.println();
