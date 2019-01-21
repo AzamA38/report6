@@ -39,7 +39,7 @@ public class Game {
 
     }
 
-        int count;
+        //int count;
 
     /**
      *ゲームのなかみ
@@ -49,12 +49,15 @@ public class Game {
 
 
     public void game(){
+
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
         /**
          * 上の３つの数字を読み込む
          */
         int[] answer = answerNumber();
+
+        int count = 0;
 
         while (true){
             int[] input = new int[3];
