@@ -6,6 +6,9 @@ public class Main {
         title();
         answerNumber();
 
+        Game ga = new Game();
+        ga.game();
+
     }
     private static void title(){
 
@@ -21,6 +24,7 @@ public class Main {
 
         System.out.println(title);
         System.out.println(rule);
+
     }
 
     private static void answerNumber(){
@@ -40,9 +44,12 @@ public class Main {
         }
         /*
         とりあえずプリントしてみる。
+        Githubの使い方を学ぶためもう一度pushしてみる。
          */
         System.out.print(answer[0]);
         System.out.print(answer[1]);
         System.out.println(answer[2]);
+
+
     }
 }
