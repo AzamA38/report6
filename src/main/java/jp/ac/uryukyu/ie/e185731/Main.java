@@ -1,15 +1,19 @@
 package jp.ac.uryukyu.ie.e185731;
 
 public class Main {
-    public static void main(String[] args){
+    public static void main(String[] args) {
 
         title();
-        answerNumber();
 
         Game ga = new Game();
+
         ga.game();
 
     }
+
+    /**
+     * タイトルを表示する
+     */
     private static void title(){
 
         String title = "*** Number Game ***";
@@ -24,32 +28,6 @@ public class Main {
 
         System.out.println(title);
         System.out.println(rule);
-
-    }
-
-    private static void answerNumber(){
-        int[] answer = new int[3];
-        for(int i = 0; i < answer.length; i++){
-            boolean set;
-            answer[i] = (int) (Math.random() * 9 + 1);
-            do {
-                set = false;
-                for(int j = i-1; j >= 0; j--){
-                    if(answer[i] == answer[j]){
-                        set = true;
-                        answer[i] = (int) (Math.random() * 9 +1);
-                    }
-                }
-            }while (set);
-        }
-        /*
-        とりあえずプリントしてみる。
-        Githubの使い方を学ぶためもう一度pushしてみる。
-         */
-        System.out.print(answer[0]);
-        System.out.print(answer[1]);
-        System.out.println(answer[2]);
-
 
     }
 }
